@@ -602,7 +602,7 @@ You&#8217;ll use the "Vanilla" starter, which contains the bare minimum.</p>
 <p><strong>Create the app from a starter</strong> - Open a new terminal window in your tutorials workspace folder, leaving the sandbox running in the first one, and run:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">enonic project create com.example.tutorial.modeling -r starter-vanilla -s tutorial_modeling -d tutorial-modeling-enonic</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">enonic project create com.example.tutorial.modeling -r starter-vanilla -s tutorial_modeling -d tutorial-modeling-enonic -f</code></pre>
 </div>
 </div>
 </li>
@@ -610,18 +610,6 @@ You&#8217;ll use the "Vanilla" starter, which contains the bare minimum.</p>
 </div>
 <div class="paragraph">
 <p>This uses <code>starter-vanilla</code> as a template, gives the app the name <code>com.example.tutorial.modeling</code>, places its files in <code>tutorial-modeling-enonic</code>, and links the app to the <code>tutorial_modeling</code> sandbox.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-You don&#8217;t need to open the starter docs, so type <code>N</code> and press <kbd>Enter</kbd> if asked.
-</td>
-</tr>
-</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -785,7 +773,7 @@ Next, you&#8217;ll <a href="content-studio.ahtml">get familiar with Content Stud
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-20 15:08:40 UTC
+Last updated 2026-11-21 20:52:21 UTC
 </div>
 </div>
 </body>

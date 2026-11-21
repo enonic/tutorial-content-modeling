@@ -654,7 +654,7 @@ The <a href="https://graphql.org/learn/schema/">GraphQL documentation</a> explai
 Search for <code>artist</code> and locate the <code>com_example_tutorial_modeling_Artist</code> object type:</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/api-doc.png" alt="Query Playground Docs panel showing the Artist GraphQL object type, its Content interface, and common fields" width="477">
+<img src="images/api-doc.png" alt="Query Playground Docs panel showing the Artist GraphQL object type, its Content interface, and common fields" width="556">
 </div>
 <div class="title">Figure 1. The Artist GraphQL type</div>
 </div>
@@ -1098,7 +1098,7 @@ Next, you&#8217;ll <a href="media.ahtml">upload files and serve processed images
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-20 15:08:40 UTC
+Last updated 2026-11-21 20:52:21 UTC
 </div>
 </div>
 </body>

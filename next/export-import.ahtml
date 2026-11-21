@@ -548,7 +548,7 @@ It does not delete other content.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><strong>Create another project</strong> - Open <strong>Settings</strong> and click <b class="button">New</b>, then follow the <a href="content-studio.ahtml#first-project">earlier project-creation example</a>.
+<p><strong>Create another project</strong> - Open <strong>Settings</strong> and click <b class="button">New</b>, then follow the <a href="content-studio.ahtml#first-project">earlier project-creation example</a>, leaving <strong>Parent project</strong> empty.
 Use the same settings, including the <strong>Content Modeling</strong> app, but name the project "Tutorial Copy" with identifier <code>tutorial-copy</code>.</p>
 </li>
 <li>
@@ -662,7 +662,7 @@ Editing one does not update the other; importing is a one-time transfer, not ong
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-20 15:08:40 UTC
+Last updated 2026-11-21 20:52:21 UTC
 </div>
 </div>
 </body>

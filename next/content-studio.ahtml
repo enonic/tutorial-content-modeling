@@ -499,7 +499,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 Each project has its own permissions, languages and other settings, and its own selection of apps.</p>
 </div>
 <div class="paragraph">
-<p>Click <b class="button">Start Project wizard</b> and follow the steps to create your first project:</p>
+<p>Click <b class="button">Start Wizard</b> and follow the steps to create your first project:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -528,7 +528,7 @@ The project identifier is important, and cannot be changed later. Later chapters
 <p><strong>Keep the default roles</strong> - Continue without changing the roles; your administrator session already has access.</p>
 </li>
 <li>
-<p><strong>Assign your app</strong> - In the "Applications" step, select the <code>Content Modeling</code> app you deployed earlier.</p>
+<p><strong>Assign your app</strong> - In the "Applications" step, select the <code>Content Modeling</code> app you deployed earlier and click <b class="button">Apply</b>, then continue to the summary.</p>
 <div class="imageblock">
 <div class="content">
 <img src="images/cs-project-summary.png" alt="Content Studio project creation summary" width="910">
@@ -585,7 +585,7 @@ Content can be organized as a tree, much like files and folders on your computer
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><strong>Start a new content item</strong> - In Content Studio, make sure your project is selected, and press <b class="button">New &#8230;&#8203;</b>.
+<p><strong>Start a new content item</strong> - In Content Studio, make sure your project is selected, and press <b class="button">New</b>.
 The dialog lists only the built-in content types.</p>
 <div class="imageblock">
 <div class="content">
@@ -777,7 +777,7 @@ Use the sample values below so your results match the queries in later chapters:
 <p><strong>Choose where to store artists</strong> - In Content Studio, select the "Artists" folder, so the new content is created inside it.</p>
 </li>
 <li>
-<p><strong>Start a new artist</strong> - Press <b class="button">New &#8230;&#8203;</b>.
+<p><strong>Start a new artist</strong> - Press <b class="button">New</b>.
 Since your app is assigned to the project, the dialog now lists Artist next to the built-in content types.</p>
 <div class="imageblock">
 <div class="content">
@@ -836,7 +836,7 @@ You create and edit content in the <em>draft</em> branch, and publishing copies 
 <ol class="arabic">
 <li>
 <p><strong>Open the Publishing Wizard</strong> - Select the "Artists" folder, right-click, and choose <b class="button">Publish</b>.
-The content items should all be <em>Work in progress</em>.</p>
+The folder is marked <em>In progress</em>.</p>
 <div class="imageblock">
 <div class="content">
 <img src="images/cs-publish.png" alt="The publishing wizard in Content Studio" width="910">
@@ -845,10 +845,10 @@ The content items should all be <em>Work in progress</em>.</p>
 </div>
 </li>
 <li>
-<p><strong>Include the artists</strong> - Click the <b class="button">include child items</b> checkbox, and then <b class="button">Apply</b>. The whole tree of content under the "Artists" folder will now be included in the publication.</p>
+<p><strong>Include the artists</strong> - Select the <strong>Include child items</strong> checkbox. The whole tree of content under the "Artists" folder is now included in the publication.</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/cs-include-children.png" alt="Once the include child items checkbox is selected and Apply is clicked - all the unpublished child items are also listed" width="910">
+<img src="images/cs-include-children.png" alt="The publishing wizard with Include child items selected and the three artists listed" width="910">
 </div>
 <div class="title">Figure 10. The publishing wizard with child items included</div>
 </div>
@@ -857,7 +857,7 @@ The content items should all be <em>Work in progress</em>.</p>
 <p><strong>Mark the content ready</strong> - Click <b class="button">Mark as ready</b> to enable the publish button.</p>
 </li>
 <li>
-<p><strong>Publish the selection</strong> - Click <b class="button">Publish Now (4)</b> to publish all items in a single batch.</p>
+<p><strong>Publish the selection</strong> - Click <b class="button">Publish now (4)</b> to publish all items in a single batch.</p>
 </li>
 </ol>
 </div>
@@ -891,7 +891,7 @@ Next, you&#8217;ll <a href="headless-api.ahtml">read that content back through t
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-20 15:08:40 UTC
+Last updated 2026-11-21 20:52:21 UTC
 </div>
 </div>
 </body>

@@ -593,11 +593,11 @@ Throughout this tutorial, "XP" refers to "Enonic XP", the platform behind Enonic
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Enonic XP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8.1.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.1.3</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Content Studio</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6.1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.1.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Guillotine</p></td>
@@ -619,7 +619,7 @@ Throughout this tutorial, "XP" refers to "Enonic XP", the platform behind Enonic
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-20 15:08:40 UTC
+Last updated 2026-11-21 20:52:21 UTC
 </div>
 </div>
 </body>
