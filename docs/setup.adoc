@@ -79,12 +79,10 @@ Use a dedicated workspace folder for Enonic tutorials, such as `enonic-tutorials
 +
 [source,shell,{subs}]
 ----
-enonic project create {app-name-full} -r starter-vanilla -s {sandbox-name} -d {app-dir}
+enonic project create {app-name-full} -r starter-vanilla -s {sandbox-name} -d {app-dir} -f
 ----
 
 This uses `starter-vanilla` as a template, gives the app the name `{app-name-full}`, places its files in `{app-dir}`, and links the app to the `{sandbox-name}` sandbox.
-
-TIP: You don't need to open the starter docs, so type `N` and press kbd:[Enter] if asked.
 
 NOTE: App names matter. XP does not run two apps with the same name in a single instance, and the name acts as a namespace for everything the app defines, so it becomes part of the content type and GraphQL type names you will see later in this tutorial. If you choose a different name, substitute it wherever `{app-name-full}` appears.
 

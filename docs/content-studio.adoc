@@ -21,7 +21,7 @@ image::cs-project-create.png["Content Studio dialog offering to start the projec
 Content in Enonic is stored in _content projects_, often shortened to _projects_.
 Each project has its own permissions, languages and other settings, and its own selection of apps.
 
-Click btn:[Start Project wizard] and follow the steps to create your first project:
+Click btn:[Start Wizard] and follow the steps to create your first project:
 
 . *Choose the project language* - Choose a default language, for instance `English`.
 
@@ -33,7 +33,7 @@ NOTE: The project identifier is important, and cannot be changed later. Later ch
 
 . *Keep the default roles* - Continue without changing the roles; your administrator session already has access.
 
-. *Assign your app* - In the "Applications" step, select the `Content Modeling` app you deployed earlier.
+. *Assign your app* - In the "Applications" step, select the `Content Modeling` app you deployed earlier and click btn:[Apply], then continue to the summary.
 +
 .Project summary showing the values you have set in the wizard
 image::cs-project-summary.png["Content Studio project creation summary", width=910]
@@ -55,7 +55,7 @@ Your app does not define any content types yet, so start with a built-in one: cr
 
 TIP: Content can be organized as a tree, much like files and folders on your computer. Grouping content in logical folders provides several benefits, as you will see later in this tutorial.
 
-. *Start a new content item* - In Content Studio, make sure your project is selected, and press btn:[New ...].
+. *Start a new content item* - In Content Studio, make sure your project is selected, and press btn:[New].
 The dialog lists only the built-in content types.
 +
 .The content creation dialog showing the built-in content types
@@ -139,7 +139,7 @@ Use the sample values below so your results match the queries in later chapters:
 
 . *Choose where to store artists* - In Content Studio, select the "Artists" folder, so the new content is created inside it.
 
-. *Start a new artist* - Press btn:[New ...].
+. *Start a new artist* - Press btn:[New].
 Since your app is assigned to the project, the dialog now lists Artist next to the built-in content types.
 +
 .The content creation dialog showing the Artist content type
@@ -174,19 +174,19 @@ During the editing process, Content Studio has different workflow statuses like 
 === Task: Publish all items
 
 . *Open the Publishing Wizard* - Select the "Artists" folder, right-click, and choose btn:[Publish].
-The content items should all be _Work in progress_.
+The folder is marked _In progress_.
 +
 .The publishing wizard
 image::cs-publish.png["The publishing wizard in Content Studio", width=910]
 
-. *Include the artists* - Click the btn:[include child items] checkbox, and then btn:[Apply]. The whole tree of content under the "Artists" folder will now be included in the publication.
+. *Include the artists* - Select the *Include child items* checkbox. The whole tree of content under the "Artists" folder is now included in the publication.
 +
 .The publishing wizard with child items included
-image::cs-include-children.png["Once the include child items checkbox is selected and Apply is clicked - all the unpublished child items are also listed", width=910]
+image::cs-include-children.png["The publishing wizard with Include child items selected and the three artists listed", width=910]
 
 . *Mark the content ready* - Click btn:[Mark as ready] to enable the publish button.
 
-. *Publish the selection* - Click btn:[Publish Now (4)] to publish all items in a single batch.
+. *Publish the selection* - Click btn:[Publish now (4)] to publish all items in a single batch.
 
 After completing the publication, publishing state should have changed from Offline to Online.
 

@@ -47,7 +47,7 @@ It does not delete other content.
 
 === Task: Import the Animals folder
 
-. *Create another project* - Open *Settings* and click btn:[New], then follow the <<content-studio#first-project, earlier project-creation example>>.
+. *Create another project* - Open *Settings* and click btn:[New], then follow the <<content-studio#first-project, earlier project-creation example>>, leaving *Parent project* empty.
 Use the same settings, including the *Content Modeling* app, but name the project "{import-project-displayname}" with identifier `{import-project-id}`.
 
 . *Open the destination* - Return to *Content* and use the project selector in the top bar to switch to "{import-project-displayname}".

@@ -1,9 +1,9 @@
 :toc: right
 :imagesdir: images
 :experimental:
-:xp-version: 8.1.2
+:xp-version: 8.1.3
 :cli-version: 4.1.4
-:cs-version: 6.1.0
+:cs-version: 6.1.1
 :guillotine-version: 9.0.0
 :xp-url: http://localhost:8080
 :api-base-url: {xp-url}/api

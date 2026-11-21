@@ -121,7 +121,7 @@ The https://graphql.org/learn/schema/[GraphQL documentation] explains schemas an
 Search for `artist` and locate the `pass:c,a[{app-name-query}_Artist]` object type:
 +
 .The Artist GraphQL type
-image::api-doc.png["Query Playground Docs panel showing the Artist GraphQL object type, its Content interface, and common fields", width=477]
+image::api-doc.png["Query Playground Docs panel showing the Artist GraphQL object type, its Content interface, and common fields", width=556]
 
 . *Find the form fields* - Follow the Artist object type's `data` field to `pass:c,a[{app-name-query}_Artist_Data]` in the Docs panel and find `legalName` and `about`.
 These are the fields you defined in your YAML form.
