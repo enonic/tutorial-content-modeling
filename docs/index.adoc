@@ -10,10 +10,10 @@ TIP: *Just want to see the result?* <<demo#,Run the demo>> to deploy the finishe
 This tutorial teaches Enonic's core content concepts and schemas — content types, media, form items, references, sets, form fragments, rich text, mixins and permissions — and when to use each one.
 Every chapter builds on the previous one in a local sandbox: you define schemas, create content in Content Studio, and run GraphQL queries to see directly how your modeled content is structured and accessed.
 
-Once your schemas and content are in place, editors manage structured items and media in Content Studio, and Guillotine exposes them automatically through GraphQL:
+Your YAML schemas become validated editing forms in Content Studio, where editors manage structured items, repeatable fields and media references, while Guillotine exposes them automatically through GraphQL:
 
-.Querying modeled content through Query Playground in Content Studio
-image::api-playground.png["Query Playground in Content Studio showing a GraphQL query on the left and structured JSON results on the right", width=1440]
+.A custom Animal content form in Content Studio referencing an uploaded image
+image::form-animal.png["Animal content form for Lion in Content Studio, with repeatable Other names and a selected lion image reference", width=578]
 
 You will complete the following steps:
 
