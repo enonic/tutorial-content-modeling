@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="application-name" content="dev101">
+<meta name="application-name" content="modeling">
 <meta name="description" content="Upload an image, inspect its content data and attachment, retrieve the original file, and request cropped and filtered versions with Guillotine.">
 <title>Media - files are content too</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -470,7 +470,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#media_urls_and_caching">Media URLs and caching</a></li>
-<li><a href="#coming_up">Coming up</a></li>
+<li><a href="#summary">Summary</a></li>
 </ul>
 </div>
 </div>
@@ -527,7 +527,7 @@ It is saved in Draft and has not been published.</p>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Your uploaded image is now a content item, just like the artists you created earlier.
-Let&#8217;s inspect its data and find the file attached to it.</p>
+Next, you&#8217;ll inspect its data and find the file attached to it.</p>
 </div>
 <div class="sect2">
 <h3 id="task_find_the_image_and_its_attachment"><a class="link" href="#task_find_the_image_and_its_attachment">Task: Find the image and its attachment</a></h3>
@@ -921,18 +921,18 @@ The platform&#8217;s <a href="https://developer.enonic.com/docs/platform/stable/
 </div>
 </div>
 <div class="sect1">
-<h2 id="coming_up"><a class="link" href="#coming_up">Coming up</a></h2>
+<h2 id="summary"><a class="link" href="#summary">Summary</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You&#8217;ve uploaded an image, inspected its content data and attachment, downloaded the original file, and requested cropped and filtered versions that use a focal point.
-In the next chapter, you&#8217;ll take a closer look at <a href="form-items.ahtml">form items</a>, the building blocks of content forms.</p>
+Next, you&#8217;ll take a closer look at <a href="form-items.ahtml">form items</a>, the building blocks of content forms.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-21 20:52:43 UTC
+Last updated 2026-11-23 10:16:37 UTC
 </div>
 </div>
 </body>

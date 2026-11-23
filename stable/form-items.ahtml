@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="application-name" content="dev101">
+<meta name="application-name" content="modeling">
 <meta name="description" content="Create an Animal content type, configure repeatable fields, select images, and link artists to animals through the GraphQL API.">
 <title>Form items</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -466,7 +466,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#more_form_items">More form items</a></li>
-<li><a href="#coming_up">Coming up</a></li>
+<li><a href="#summary">Summary</a></li>
 </ul>
 </div>
 </div>
@@ -648,7 +648,7 @@ The names are strings; the images are content references whose fields you can se
   guillotine {
     get(key: "/animals/lion") {
       displayName
-      ... on com_example_dev101_Animal {
+      ... on com_example_tutorial_modeling_Animal {
         data {
           otherNames
           images {
@@ -685,7 +685,7 @@ As in the <a href="headless-api.ahtml">Headless API chapter</a>, an inline fragm
 <div class="ulist">
 <ul>
 <li>
-<p><code>... on {app-name-query}_Animal</code> gives you access to the Animal&#8217;s <code>data</code>.</p>
+<p><code>... on com_example_tutorial_modeling_Animal</code> gives you access to the Animal&#8217;s <code>data</code>.</p>
 </li>
 <li>
 <p><code>... on media_Image</code> gives you access to the image&#8217;s <code>imageUrl</code>.</p>
@@ -693,7 +693,7 @@ As in the <a href="headless-api.ahtml">Headless API chapter</a>, an inline fragm
 </ul>
 </div>
 <div class="paragraph">
-<p>These are GraphQL type names; your CMS content types are <code>com.example.dev101:animal</code> and <code>media:image</code>.
+<p>These are GraphQL type names; your CMS content types are <code>com.example.tutorial.modeling:animal</code> and <code>media:image</code>.
 The image selector stores the image&#8217;s ID, and Guillotine resolves that reference for you.</p>
 </div>
 </div>
@@ -808,16 +808,16 @@ For data that only belongs to one item, such as an artist&#8217;s filmography en
       query: {
         term: {
           field: "type"
-          value: { string: "com.example.dev101:artist" }
+          value: { string: "com.example.tutorial.modeling:artist" }
         }
       }
     ) {
       displayName
-      ... on com_example_dev101_Artist {
+      ... on com_example_tutorial_modeling_Artist {
         data {
           favoriteAnimal {
             displayName
-            ... on com_example_dev101_Animal {
+            ... on com_example_tutorial_modeling_Animal {
               data {
                 otherNames
               }
@@ -902,18 +902,18 @@ See the <a href="https://developer.enonic.com/docs/guillotine/stable/api#attachm
 </div>
 </div>
 <div class="sect1">
-<h2 id="coming_up"><a class="link" href="#coming_up">Coming up</a></h2>
+<h2 id="summary"><a class="link" href="#summary">Summary</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You&#8217;ve created repeatable fields, selected an image, linked artists to animals, and followed those references through Guillotine.
-In the next chapter, you&#8217;ll group and reuse form items with <a href="sets.ahtml">sets and form fragments</a>.</p>
+Next, you&#8217;ll <a href="sets.ahtml">group and reuse form items with sets and form fragments</a>.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-21 20:52:43 UTC
+Last updated 2026-11-23 10:16:37 UTC
 </div>
 </div>
 </body>

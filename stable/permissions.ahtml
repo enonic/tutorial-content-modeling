@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="application-name" content="dev101">
+<meta name="application-name" content="modeling">
 <meta name="description" content="Publish your tutorial content, test public and restricted access, and understand how editorial roles separate editing from publishing.">
 <title>Permissions and publishing</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -459,7 +459,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#give_teams_access_to_specific_content">Give teams access to specific content</a></li>
 </ul>
 </li>
-<li><a href="#coming_up">Coming up</a></li>
+<li><a href="#summary">Summary</a></li>
 </ul>
 </div>
 </div>
@@ -757,18 +757,18 @@ See the <a href="https://developer.enonic.com/docs/content-studio/stable/workben
 </div>
 </div>
 <div class="sect1">
-<h2 id="coming_up"><a class="link" href="#coming_up">Coming up</a></h2>
+<h2 id="summary"><a class="link" href="#summary">Summary</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You&#8217;ve published your content, compared public and restricted access, and learned how editorial roles separate editing from publishing.
-In the next chapter, you&#8217;ll <a href="export-import.ahtml">export your content and import it into another project</a>.</p>
+Next, you&#8217;ll <a href="export-import.ahtml">export your content and import it into another project</a>.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-21 20:52:43 UTC
+Last updated 2026-11-23 10:16:37 UTC
 </div>
 </div>
 </body>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="application-name" content="dev101">
+<meta name="application-name" content="modeling">
 <meta name="description" content="Add a filmography to artists, model animals with option sets, and reuse fields with a form fragment. Query each addition through Guillotine.">
 <title>Sets and form fragments</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -455,7 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#task_query_the_selected_option">Task: Query the selected option</a></li>
 </ul>
 </li>
-<li><a href="#reuse_fields_across_options">Reuse fields across options</a>
+<li><a href="#form-fragments">Reuse fields across options</a>
 <ul class="sectlevel2">
 <li><a href="#task_create_the_distribution_form_fragment">Task: Create the distribution form fragment</a></li>
 <li><a href="#task_add_distribution_to_animal">Task: Add distribution to Animal</a></li>
@@ -463,7 +463,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#visual_grouping_and_further_reading">Visual grouping and further reading</a></li>
-<li><a href="#coming_up">Coming up</a></li>
+<li><a href="#summary">Summary</a></li>
 </ul>
 </div>
 </div>
@@ -589,7 +589,7 @@ Fetch Cardi B by path and select the fields within <code>filmography</code>:</p>
   guillotine {
     get(key: "/artists/cardi-b") {
       displayName
-      ... on com_example_dev101_Artist {
+      ... on com_example_tutorial_modeling_Artist {
         data {
           filmography {
             title
@@ -720,7 +720,7 @@ The <code>carnivore</code> option contains a repeatable <code>prey</code> field.
   guillotine {
     get(key: "/animals/lion") {
       displayName
-      ... on com_example_dev101_Animal {
+      ... on com_example_tutorial_modeling_Animal {
         data {
           feedingBehavior {
             _selected
@@ -770,7 +770,7 @@ The <code>carnivore</code> object contains that option&#8217;s fields.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="reuse_fields_across_options"><a class="link" href="#reuse_fields_across_options">Reuse fields across options</a></h2>
+<h2 id="form-fragments"><a class="link" href="#form-fragments">Reuse fields across options</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Next, you&#8217;ll record where an animal lives.
@@ -913,7 +913,7 @@ A CMS form fragment is also separate from a GraphQL fragment, which groups field
   guillotine {
     get(key: "/animals/lion") {
       displayName
-      ... on com_example_dev101_Animal {
+      ... on com_example_tutorial_modeling_Animal {
         data {
           distribution {
             _selected
@@ -977,18 +977,18 @@ For example, grouping Artist&#8217;s existing fields in a field set would leave 
 </div>
 </div>
 <div class="sect1">
-<h2 id="coming_up"><a class="link" href="#coming_up">Coming up</a></h2>
+<h2 id="summary"><a class="link" href="#summary">Summary</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You&#8217;ve repeated structured filmography entries, selected options with their own fields, reused a form fragment, and queried each addition through Guillotine.
-In the next chapter, you&#8217;ll add <a href="rich-text.ahtml">rich text</a>, including links, images and macros.</p>
+Next, you&#8217;ll <a href="rich-text.ahtml">add rich text with links, images and macros</a>.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-21 20:52:43 UTC
+Last updated 2026-11-23 10:16:37 UTC
 </div>
 </div>
 </body>

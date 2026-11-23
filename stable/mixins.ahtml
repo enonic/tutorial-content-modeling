@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="application-name" content="dev101">
+<meta name="application-name" content="modeling">
 <meta name="description" content="Add shared editorial notes to artists and animals with a mixin, then query their values through Guillotine.">
 <title>Mixins</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -458,7 +458,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#mixins_from_other_apps">Mixins from other apps</a></li>
 <li><a href="#choosing_the_right_tool">Choosing the right tool</a></li>
-<li><a href="#coming_up">Coming up</a></li>
+<li><a href="#summary">Summary</a></li>
 </ul>
 </div>
 </div>
@@ -471,7 +471,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>A <em>mixin</em> adds a group of fields to content types without editing each content type&#8217;s schema.
 Use one for fields such as editorial notes that apply across different kinds of content, or to extend built-in types such as folders and media.
-Unlike a <a href="sets.ahtml#_reuse_fields_across_options">form fragment</a>, which inserts fields into a schema&#8217;s form, a mixin keeps its values separately under <code>x</code>.</p>
+Unlike a <a href="sets.ahtml#form-fragments">form fragment</a>, which inserts fields into a schema&#8217;s form, a mixin keeps its values separately under <code>x</code>.</p>
 </div>
 </div>
 </div>
@@ -526,7 +526,7 @@ The form contains one repeatable TextLine field named <code>notes</code>, allowi
 <pre class="highlight"><code class="language-yaml" data-lang="yaml">kind: "CMS"
 mixins:
   - name: "editorial"
-    allowContentTypes: "com.example.dev101:artist|com.example.dev101:animal"</code></pre>
+    allowContentTypes: "com.example.tutorial.modeling:artist|com.example.tutorial.modeling:animal"</code></pre>
 </div>
 </div>
 </li>
@@ -595,7 +595,7 @@ The typed fields let your client request just the values it needs.</p>
     get(key: "/animals/lynx") {
       displayName
       x {
-        com_example_dev101 {
+        com_example_tutorial_modeling {
           editorial {
             notes
           }
@@ -617,7 +617,7 @@ The typed fields let your client request just the values it needs.</p>
       "get": {
         "displayName": "Lynx",
         "x": {
-          "com_example_dev101": {
+          "com_example_tutorial_modeling": {
             "editorial": {
               "notes": [
                 "Review the habitat description.",
@@ -640,7 +640,7 @@ The typed <code>notes</code> field returns a list, even when the content item ha
 </ol>
 </div>
 <div class="paragraph">
-<p>The three levels inside <code>x</code> are the app (<code>{app-name-query}</code>), the mixin (<code>editorial</code>), and its field (<code>notes</code>).
+<p>The three levels inside <code>x</code> are the app (<code>com_example_tutorial_modeling</code>), the mixin (<code>editorial</code>), and its field (<code>notes</code>).
 Dots in the app key become underscores in the GraphQL field name.
 Unlike the content type&#8217;s <code>data</code>, <code>x</code> is available on the shared <code>Content</code> interface, so this query needs no Animal inline fragment.</p>
 </div>
@@ -668,7 +668,7 @@ Unlike the content type&#8217;s <code>data</code>, <code>x</code> is available o
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-json" data-lang="json">{
-  "com-example-dev101": {
+  "com-example-tutorial-modeling": {
     "editorial": {
       "notes": [
         "Review the habitat description.",
@@ -683,7 +683,7 @@ Unlike the content type&#8217;s <code>data</code>, <code>x</code> is available o
 </ol>
 </div>
 <div class="paragraph">
-<p>Notice the app key: the JSON representation uses hyphens (<code>com-example-dev101</code>), while the typed GraphQL field uses underscores (<code>{app-name-query}</code>).
+<p>Notice the app key: the JSON representation uses hyphens (<code>com-example-tutorial-modeling</code>), while the typed GraphQL field uses underscores (<code>com_example_tutorial_modeling</code>).
 The values are the same, but JSON does not apply the GraphQL field types: a single note appears as a string in <code>xAsJson</code>, while the typed field remains a list.
 Use the typed fields when your client needs a predictable shape and only selected values.
 The <a href="https://developer.enonic.com/docs/cms/stable/content/mixins">CMS mixins reference</a> covers the underlying storage in more detail.</p>
@@ -770,23 +770,23 @@ Use this recap when deciding how to represent new content:</p>
 <p>An OptionSet can support multiple selections with separate fields for each selected option, as you did with continents and their notes in the <a href="sets.ahtml">sets chapter</a>.
 A repeatable OptionSet with one selected option per occurrence lets editors build a sequence of blocks, such as text, images and quotes, for your front-end to render.
 See the <a href="https://developer.enonic.com/docs/cms/stable/schemas/form-items/option-set">OptionSet reference</a> for configuration examples.
-For visual editing or more advanced page composition, explore XP&#8217;s <a href="https://developer.enonic.com/docs/cms/stable/pages">page model</a> in the <a href="https://developer.enonic.com/docs/intro">Introduction to Enonic</a> or the <a href="https://developer.enonic.com/docs/next.xp">Next.js tutorial</a>.</p>
+For visual editing or more advanced page composition, explore XP&#8217;s <a href="https://developer.enonic.com/docs/cms/stable/pages">page model</a> in the <a href="https://developer.enonic.com/learn/intro">Introduction to Enonic</a> or the <a href="https://developer.enonic.com/learn/nextjs">Next.js tutorial</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="coming_up"><a class="link" href="#coming_up">Coming up</a></h2>
+<h2 id="summary"><a class="link" href="#summary">Summary</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You&#8217;ve added and queried a mixin across two content types, completing the tutorial&#8217;s content model.
-In the next chapter, you&#8217;ll publish your content and explore <a href="permissions.ahtml">read and editorial permissions</a>.</p>
+Next, you&#8217;ll <a href="permissions.ahtml">publish your content and explore read and editorial permissions</a>.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-21 20:52:43 UTC
+Last updated 2026-11-23 10:16:37 UTC
 </div>
 </div>
 </body>

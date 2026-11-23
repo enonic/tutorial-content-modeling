@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="application-name" content="dev101">
+<meta name="application-name" content="modeling">
 <meta name="description" content="Add a rich text description, insert links, images and a macro, and inspect how Guillotine returns each one for your front-end.">
 <title>Rich text</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -472,7 +472,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#optional_request_responsive_images">Optional: Request responsive images</a></li>
-<li><a href="#coming_up">Coming up</a></li>
+<li><a href="#summary">Summary</a></li>
 </ul>
 </div>
 </div>
@@ -577,7 +577,7 @@ Query both forms of the HTML together with the link&#8217;s target and URL compo
 <pre class="highlight"><code class="language-graphql" data-lang="graphql">{
   guillotine {
     get(key: "/animals/lynx") {
-      ... on com_example_dev101_Animal {
+      ... on com_example_tutorial_modeling_Animal {
         data {
           description {
             raw
@@ -718,7 +718,7 @@ For more editing controls, see the <a href="https://developer.enonic.com/docs/co
 <pre class="highlight"><code class="language-graphql" data-lang="graphql">{
   guillotine {
     get(key: "/animals/lynx") {
-      ... on com_example_dev101_Animal {
+      ... on com_example_tutorial_modeling_Animal {
         data {
           description {
             processedHtml
@@ -896,7 +896,7 @@ The macro stores the iframe configuration in the rich text.</p>
 <pre class="highlight"><code class="language-graphql" data-lang="graphql">{
   guillotine {
     get(key: "/animals/lynx") {
-      ... on com_example_dev101_Animal {
+      ... on com_example_tutorial_modeling_Animal {
         data {
           description {
             processedHtml
@@ -971,7 +971,7 @@ This example requests an 800-pixel main image and two responsive alternatives:</
 <pre class="highlight"><code class="language-graphql" data-lang="graphql">{
   guillotine {
     get(key: "/animals/lynx") {
-      ... on com_example_dev101_Animal {
+      ... on com_example_tutorial_modeling_Animal {
         data {
           description(processHtml: {
             imageSrcWidth: 800
@@ -1011,18 +1011,18 @@ Request sizes through Guillotine; do not construct them by editing the returned 
 </div>
 </div>
 <div class="sect1">
-<h2 id="coming_up"><a class="link" href="#coming_up">Coming up</a></h2>
+<h2 id="summary"><a class="link" href="#summary">Summary</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You&#8217;ve added rich text with a link, an image style and a macro, and inspected the HTML and structured data your front-end uses to render them.
-In the next chapter, you&#8217;ll add fields across content types with <a href="mixins.ahtml">mixins</a>.</p>
+Next, you&#8217;ll <a href="mixins.ahtml">add shared fields across content types with mixins</a>.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-21 20:52:43 UTC
+Last updated 2026-11-23 10:16:37 UTC
 </div>
 </div>
 </body>
