@@ -5,7 +5,6 @@ on:
     branches:
       - "master"
       - "7.x"
-      - "issue-108"
     paths:
       - 'docs/**'
       - 'src/main/resources/**'
