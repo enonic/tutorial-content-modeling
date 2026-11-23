@@ -476,13 +476,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 Every chapter builds on the previous one in a local sandbox: you define schemas, create content in Content Studio, and run GraphQL queries to see directly how your modeled content is structured and accessed.</p>
 </div>
 <div class="paragraph">
-<p>Once your schemas and content are in place, editors manage structured items and media in Content Studio, and Guillotine exposes them automatically through GraphQL:</p>
+<p>Your YAML schemas become validated editing forms in Content Studio, where editors manage structured items, repeatable fields and media references, while Guillotine exposes them automatically through GraphQL:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/api-playground.png" alt="Query Playground in Content Studio showing a GraphQL query on the left and structured JSON results on the right" width="1440">
+<img src="images/form-animal.png" alt="Animal content form for Lion in Content Studio, with repeatable Other names and a selected lion image reference" width="578">
 </div>
-<div class="title">Figure 1. Querying modeled content through Query Playground in Content Studio</div>
+<div class="title">Figure 1. A custom Animal content form in Content Studio referencing an uploaded image</div>
 </div>
 <div class="paragraph">
 <p>You will complete the following steps:</p>
@@ -619,7 +619,7 @@ Throughout this tutorial, "XP" refers to "Enonic XP", the platform behind Enonic
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-11-23 10:16:37 UTC
+Last updated 2026-11-23 10:30:07 UTC
 </div>
 </div>
 </body>
